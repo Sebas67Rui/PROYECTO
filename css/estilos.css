@@ -1,0 +1,171 @@
+  
+/*TIPOS DE LETRAS*/  
+.rubik-beastly-regular {
+  font-family: "Rubik Beastly", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-moonrocks-regular {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700 */
+
+.Edu-NSW-ACT-Foundation{
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  .container
+  {
+    background-color: aquamarine;
+    width: 400px;
+    height: 150px;
+
+  }
+  .container-fluid
+  {
+    /*background-color: coral;
+    /*width: 400px;
+    height: 150px;*/
+  }
+  .row
+  {
+    /*background-color: gold;
+    margin: 5px;*/
+  }
+  .col{
+    background-color: moccasin;
+    margin: 5px;
+  }
+  .modal-body
+  {
+    background-color: coral;
+  }
+
+
+/*TARJETAS*/
+
+.card {
+  width: 285px; /* Establece un ancho fijo para todas las tarjetas */
+  border: 2px solid #04021C;
+  display: flex;
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: space-between; /* Espacio igual arriba y abajo */
+  max-height: 500px;
+  margin: 0 110px;
+}
+
+.tar_contenedor{
+  display: flex;
+}
+
+.card-body {
+  flex: 1; /* Hace que el contenido se expanda para llenar el espacio vertical */
+  overflow: hidden; /* Oculta el contenido que no quepa */
+}
+
+
+/*PESTAÑAS CHIDAS*/
+
+.body_espe{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+}
+
+.espejo{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 40px;
+}
+
+.espejo .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.espejo .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.espejo .front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.espejo .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0,.4);
+  text-align: center;
+}
+
+.espejo .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.espejo .back .lik{
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.espejo .back .lik a {
+  color: #f3f3f3;
+}
+
+.espejo .back h3{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.espejo .back p{
+  letter-spacing: 1px;
+}
+
+.espejo:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.espejo:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+  
